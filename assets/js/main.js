@@ -23,6 +23,50 @@
   window.addEventListener('load', toggleScrolled);
 
   /**
+   * Animate numbers on scroll
+   */
+  /**
+ * Animate numbers with scramble effect
+ */
+  function animateNumbersScramble() {
+    const numberElements = document.querySelectorAll('.team-card h1');
+
+    numberElements.forEach(el => {
+      const target = +el.getAttribute('data-target');
+      if (!target) return;
+
+      const rect = el.getBoundingClientRect();
+      const isVisible = rect.top >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight);
+
+      if (isVisible && !el.classList.contains('animated')) {
+        el.classList.add('animated');
+
+        let scrambleDuration = 1000; // scramble selama 1 detik
+        let revealDuration = 500; // lalu reveal angka asli selama 0.5 detik
+        let startTime = null;
+
+        function scrambleAnimation(timestamp) {
+          if (!startTime) startTime = timestamp;
+          const elapsed = timestamp - startTime;
+
+          if (elapsed < scrambleDuration) {
+            el.innerText = Math.floor(Math.random() * 100); // scramble 0-99
+            requestAnimationFrame(scrambleAnimation);
+          } else {
+            el.innerText = target;
+          }
+        }
+
+        requestAnimationFrame(scrambleAnimation);
+      }
+    });
+  }
+
+  window.addEventListener('scroll', animateNumbersScramble);
+  window.addEventListener('load', animateNumbersScramble);
+
+
+  /**
    * Mobile nav toggle
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
@@ -160,5 +204,6 @@
     });
 
   });
+  
 
 })();
