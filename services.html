@@ -1,537 +1,869 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Layanan - Antardata Cakrawala Teknologi</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Services - Nova Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+    <!-- Favicons -->
+    <link
+      href="assets/img/antardata/logo/logo_antardata/logo_utama.png"
+      rel="icon"
+    />
+    <link
+      href="assets/img/antardata/logo/logo_antardata/logo_wana_putih.png"
+      rel="apple-touch-icon"
+    />
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet" />
 
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
+    <!-- =======================================================
   * Template Name: Nova
   * Template URL: https://bootstrapmade.com/nova-bootstrap-business-template/
   * Updated: Aug 07 2024 with Bootstrap v5.3.3
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-</head>
+  </head>
 
-<body class="services-page">
+  <body class="services-page">
+    <header id="header" class="header d-flex align-items-center fixed-top">
+      <div
+        class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between"
+      >
+        <a href="index.html" class="logo d-flex align-items-center">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <!-- <img src="assets/img/logo.png" alt=""> -->
+          <img
+            class="sitename"
+            src="assets/img/antardata/logo/logo_antardata/logo_wana_putih.png"
+            alt=""
+            data-aos="fade-in"
+          />
+        </a>
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Nova</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html">Beranda<br></a></li>
-          <li><a href="about.html">Tentang Kami</a></li>
-          <li><a href="services.html" class="active">Layanan</a></li>
-          <li><a href="portfolio.html">Portofolio</a></li>
-          <li><a href="team.html">Tim</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Produk</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.html">Kontak</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/services-page-title-bg.jpg);">
-      <div class="container">
-        <h1>Produk & Layanan</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Beranda</a></li>
-            <li class="current">Layanan</li>
-          </ol>
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li>
+              <a href="index.html">Beranda<br /></a>
+            </li>
+            <li><a href="about.html">Tentang Kami</a></li>
+            <li><a href="services.html" class="active">Layanan</a></li>
+            <li><a href="portfolio.html">Portofolio</a></li>
+            <li><a href="team.html">Tim</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <!-- <li class="dropdown">
+              <a href="#"
+                ><span>Produk</span>
+                <i class="bi bi-chevron-down toggle-dropdown"></i
+              ></a>
+              <ul>
+                <li><a href="#">Dropdown 1</a></li>
+                <li class="dropdown">
+                  <a href="#"
+                    ><span>Deep Dropdown</span>
+                    <i class="bi bi-chevron-down toggle-dropdown"></i
+                  ></a>
+                  <ul>
+                    <li><a href="#">Deep Dropdown 1</a></li>
+                    <li><a href="#">Deep Dropdown 2</a></li>
+                    <li><a href="#">Deep Dropdown 3</a></li>
+                    <li><a href="#">Deep Dropdown 4</a></li>
+                    <li><a href="#">Deep Dropdown 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Dropdown 2</a></li>
+                <li><a href="#">Dropdown 3</a></li>
+                <li><a href="#">Dropdown 4</a></li>
+              </ul>
+            </li> -->
+            <li><a href="contact.html">Kontak</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
       </div>
-    </div><!-- End Page Title -->
+    </header>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+    <main class="main">
+      <!-- Page Title -->
+      <div
+        class="page-title dark-background"
+        data-aos="fade"
+        style="background-image: url(assets/img/antardata/layanan/Latar-1.jpg)"
+      >
+        <div class="container">
+          <h1>Produk & Layanan</h1>
+          <nav class="breadcrumbs">
+            <ol>
+              <li><a href="index.html">Beranda</a></li>
+              <li class="current">Layanan</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+      <!-- End Page Title -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Digital & Marketing Hub</h2>
-        <p>Dirancang untuk memberikan solusi marketing digital yang tidak sekedar alat, melainkan mitra strategis transformasi bisnis digital.</p>
-      </div><!-- End Section Title -->
+      <!-- Services Section -->
+      <section id="services" class="services section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Digital & Marketing Hub</h2>
+          <p>
+            Dirancang untuk memberikan solusi marketing digital yang tidak
+            sekedar alat, melainkan mitra strategis transformasi bisnis digital.
+          </p>
+        </div>
+        <!-- End Section Title -->
 
-      <div class="container">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="bi bi-briefcase" style="color: #f57813;"></i></div>
-            <div>
-              <h4 class="title">360° Digital Marketing</h4>
-              <p class="description">Strategi pemasaran terintegrasi untuk mengembangkan atau meningkatkan kinerja digital agar brand dapat berkembang.</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+        <div class="container">
+          <div class="row gy-4 justify-content-center">
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-briefcase" style="color: #f57813"></i>
+              </div>
+              <div>
+                <h4 class="title">360° Digital Marketing</h4>
+                <p class="description">
+                  Strategi pemasaran terintegrasi untuk mengembangkan atau
+                  meningkatkan kinerja digital agar brand dapat berkembang.
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
             </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-card-checklist" style="color: #15a04a"></i>
+              </div>
+              <div>
+                <h4 class="title">Visual Branding & Disain</h4>
+                <p class="description">
+                  Pembuatan disain grafis visual meliputi Logo, Packaging,
+                  Stationery, hingga konten Sosial Media, Website, dll.
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bar-chart" style="color: #d90769"></i>
+              </div>
+              <div>
+                <h4 class="title">Commercial Photography</h4>
+                <p class="description">
+                  Pembuatan foto produk komersial untuk katalog & konten
+                  branding secara digital
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-binoculars" style="color: #15bfbc"></i>
+              </div>
+              <div>
+                <h4 class="title">Video Production</h4>
+                <p class="description">
+                  Pembuatan video animasi, promosi, company profile, hingga
+                  konten sosial media (Tiktok, Reels, Youtube, dan IG)
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-brightness-high" style="color: #f5cf13"></i>
+              </div>
+              <div>
+                <h4 class="title">Digital Campaign</h4>
+                <p class="description">
+                  Pembuatan dan manajemen strategi iklan digital meliputi Social
+                  Media Ads dan Search Engine Marketing (SEM)
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-calendar4-week" style="color: #1335f5"></i>
+              </div>
+              <div>
+                <h4 class="title">Social Media Management</h4>
+                <p class="description">
+                  Pengelolaan dan manajemen akun Sosial Media menggunakan
+                  data-driven strategy
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-browser-edge" style="color: #7f55b1"></i>
+              </div>
+              <div>
+                <h4 class="title">Website Development</h4>
+                <p class="description">
+                  Pembuatan website baru maupun redesign website lama dengan
+                  teknologi serta desain terkini
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
+
+            <div
+              class="col-lg-4 col-md-6 service-item d-flex"
+              data-aos="fade-up"
+              data-aos-delay="600"
+            >
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-browser-safari" style="color: #129990"></i>
+              </div>
+              <div>
+                <h4 class="title">Search Engine Optimization</h4>
+                <p class="description">
+                  Optimasi website untuk meningkatkan traffic organik di mesin
+                  pencarian
+                </p>
+                <!-- <a href="#" class="readmore stretched-link"
+                  ><span>Learn More</span><i class="bi bi-arrow-right"></i
+                ></a> -->
+              </div>
+            </div>
+            <!-- End Service Item -->
           </div>
-          <!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist" style="color: #15a04a;"></i></div>
-            <div>
-              <h4 class="title">Visual Branding & Disain</h4>
-              <p class="description">Pembuatan disain grafis visual meliputi Logo, Packaging, Stationery, hingga konten Sosial Media, Website, dll.</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon flex-shrink-0"><i class="bi bi-bar-chart" style="color: #d90769;"></i></div>
-            <div>
-              <h4 class="title">Commercial Photography</h4>
-              <p class="description">Pembuatan foto produk komersial untuk katalog & konten branding secara digital</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon flex-shrink-0"><i class="bi bi-binoculars" style="color: #15bfbc;"></i></div>
-            <div>
-              <h4 class="title">Video Production</h4>
-              <p class="description">Pembuatan video animasi, promosi, company profile, hingga konten sosial media (Tiktok, Reels, Youtube, dan IG)</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon flex-shrink-0"><i class="bi bi-brightness-high" style="color: #f5cf13;"></i></div>
-            <div>
-              <h4 class="title">Digital Campaign</h4>
-              <p class="description">Pembuatan dan manajemen strategi iklan digital meliputi Social Media Ads dan Search Engine Marketing (SEM)</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
-            <div>
-              <h4 class="title">Social Media Management</h4>
-              <p class="description">Pengelolaan dan manajemen akun Sosial Media menggunakan data-driven strategy</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
-            <div>
-              <h4 class="title">Website Development</h4>
-              <p class="description">Pembuatan website baru maupun redesign website lama dengan teknologi serta desain terkini</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week" style="color: #1335f5;"></i></div>
-            <div>
-              <h4 class="title">Search Engine Optimization</h4>
-              <p class="description">Optimasi website untuk meningkatkan traffic organik di mesin pencarian</p>
-              <a href="#" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
-
         </div>
+      </section>
+      <!-- /Services Section -->
 
-      </div>
-
-    </section><!-- /Services Section -->
-
-
-
-    <!-- Service Cards Section -->
-    <section id="service-cards" class="service-cards section">
-
-      <div class="container-fluid">
-
-        <div class="row gy-4 justify-content-center">
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-1.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Antarmedika MCR (Medical Cloud Record).</h4>
-                    <p>Aplikasi manajemen kesehatan untuk klinik dan praktik mandiri tenaga kesehatan berbasis cloud. Aplikasi ini menyediakan beberapa keunggulan diantaranya: Pencatatan rekam medis elektronik pasien, penjualan farmasi, manajemen gudang farmasi, marketing digital kesehatan, reservasi online pasien, laporan keuangan dan pendapatan, integrasi Satu Sehat Kemenkes.</p>
+      <!-- Service Cards Section -->
+      <section id="service-cards" class="service-cards section">
+        <div class="container-fluid">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img src="assets/img/antardata/layanan/mcr.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Antarmedika MCR (Medical Cloud Record).
+                      </h4>
+                      <p>
+                        Aplikasi manajemen kesehatan untuk klinik dan praktik
+                        mandiri tenaga kesehatan berbasis cloud. Aplikasi ini
+                        menyediakan beberapa keunggulan diantaranya:
+                        <b
+                          >Pencatatan rekam medis elektronik pasien, penjualan
+                          farmasi, manajemen gudang farmasi, marketing digital
+                          kesehatan, reservasi online pasien, laporan keuangan
+                          dan pendapatan, integrasi Satu Sehat Kemenkes.</b
+                        >
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+            <!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-5.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">APM (Anjungan Pendaftaran Mandiri)</h4>
-                    <p>Sistem antrian pasien rumah sakit terintegrasi yang menyediakan solusi masalah penumpukan pasien saat penerimaan layanan di rumah sakit.
-                      Produk ini menyediakan layanan antara lain: Mesin antrian (KiosK), aplikasi antrian offline/online, sistem antrian (adimisi, kasir, poli, farmasi), dukungan pelatihan dan pendampingan, observasi dan penelitian masalah, integrasi antrian BPJS Kesehatan & SIMRS, dan pencetakan SEP mandiri.</p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img src="assets/img/antardata/layanan/apm.jpg" alt="" />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        APM (Anjungan Pendaftaran Mandiri)
+                      </h4>
+                      <p>
+                        <b
+                          >Sistem antrian pasien rumah sakit terintegrasi yang
+                          menyediakan solusi masalah penumpukan pasien saat
+                          penerimaan layanan di rumah sakit.</b
+                        >
+                        Produk ini menyediakan layanan antara lain: Mesin
+                        antrian (KiosK), aplikasi antrian offline/online, sistem
+                        antrian (adimisi, kasir, poli, farmasi), dukungan
+                        pelatihan dan pendampingan, observasi dan penelitian
+                        masalah, integrasi antrian BPJS Kesehatan & SIMRS, dan
+                        pencetakan SEP mandiri.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+            <!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-3.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">ProMedika (Sistem Informasi Manajemen Rumah Sakit)</h4>
-                    <p>Aplikasi manajemen rumah sakit untuk mendukung perekaman transaksi pasien dan pengelolaan bisnis rumah sakit. Aplikasi ini sudah mengikuti standar-standar yang sudah berlaku saat ini, seperti: integrasi Satu Sehat, BPJS Kesehatan, Akreditasi, dll. Aplikasi ini mendukung untuk pengelolaan rekam medis, rawat jalan, rawat inap, penunjang medis, farmasi, dan keuangan/akutansi. Sistem ini merupakan solusi untuk penerapan Peraturan Menteri Kesehatan No. 24 tentang Standarisasi Rekam Medis Elektronik.</p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/antardata/layanan/promedika.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        ProMedika (Sistem Informasi Manajemen Rumah Sakit)
+                      </h4>
+                      <p>
+                        <b
+                          >Aplikasi manajemen rumah sakit untuk mendukung
+                          perekaman transaksi pasien dan pengelolaan bisnis
+                          rumah sakit.</b
+                        >
+                        Aplikasi ini sudah mengikuti standar-standar yang sudah
+                        berlaku saat ini, seperti: integrasi Satu Sehat, BPJS
+                        Kesehatan, Akreditasi, dll. Aplikasi ini mendukung untuk
+                        pengelolaan rekam medis, rawat jalan, rawat inap,
+                        penunjang medis, farmasi, dan keuangan/akutansi. Sistem
+                        ini merupakan solusi untuk penerapan Peraturan Menteri
+                        Kesehatan No. 24 tentang Standarisasi Rekam Medis
+                        Elektronik.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+            <!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-4.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Antarmedika HBC (Healtchare Business Consulting)</h4>
-                    <p>Bekerjasama dengan Arista Consultant, menyediakan kebutuhan pelaku bisnis kesehatan dalam pembangunan, pengembangan, pemenuhan standarisasi, dan pelatihan sesuai dengan aturan yang berlaku. Didukung dengan tim yang profesional disetiap bidang, memberikan layanan berupa: Pengurusan perijinan klinik dan RS, Standarisasi akreditasi, Penyedia dan pelatihan SDM, Konsultan EMR, Konsultan akutansi dan keuangan, Perencanaan bisnis kesehatan (Klinik, RS, Labolatorium, Apotik).</p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/antardata/layanan/antarmedika-hbc.JPG"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Antarmedika HBC (Healtchare Business Consulting)
+                      </h4>
+                      <p>
+                        Bekerjasama dengan <i>Arista Consultant</i>,
+                        <b
+                          >menyediakan kebutuhan pelaku bisnis kesehatan dalam
+                          pembangunan, pengembangan, pemenuhan standarisasi, dan
+                          pelatihan sesuai dengan aturan yang berlaku.</b
+                        >
+                        Didukung dengan tim yang profesional disetiap bidang,
+                        memberikan layanan berupa: Pengurusan perijinan klinik
+                        dan RS, Standarisasi akreditasi, Penyedia dan pelatihan
+                        SDM, Konsultan EMR, Konsultan akutansi dan keuangan,
+                        Perencanaan bisnis kesehatan (Klinik, RS, Labolatorium,
+                        Apotik).
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+            <!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-3.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">Nusabook (E-ticketing System of Tol Laut Indonesia)</h4>
-                    <p>Sistem pemesanan tiket transportasi kapal (Tol Laut) Indonesia. Monitoring perjalanan kapal perintis untuk manajemen data manifes penumpang. Sistem ini menyediakan: Integrasi peta perjalanan terintegrasi, Sistem pembayaran digital, Pelacakan GPS, rekomendasi rute teroptimasi, Loyalty program terintegrasi, dan Dukungan multi platform (web & mobile)</p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/antardata/layanan/nusabook.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Nusabook (E-ticketing System of Tol Laut Indonesia)
+                      </h4>
+                      <p>
+                        <b
+                          >Sistem pemesanan tiket transportasi kapal (Tol Laut)
+                          Indonesia. Monitoring perjalanan kapal perintis untuk
+                          manajemen data manifes penumpang.</b
+                        >
+                        Sistem ini menyediakan: Integrasi peta perjalanan
+                        terintegrasi, Sistem pembayaran digital, Pelacakan GPS,
+                        rekomendasi rute teroptimasi, Loyalty program
+                        terintegrasi, dan Dukungan multi platform (web & mobile)
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+            <!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-5.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">CodeFusion (Development Ecosystem Application)</h4>
-                    <p>Layanan pengembangan skosistem software bisnis terintegrasi. Memberikan dukungan terhadap mitra untuk pengembangan sistem berbasis digital yang terintegrasi, aman, dan adaptif. Layanan pengembangan meliputi: Aplikasi web & mobile canggih (Android & iOS), Desain UI/UX adaptif, Arsitektur microservices, Pengembangan cross-platform, Manajemen project AI, Keamanan & performance testing, Deployment otomatis, Konsultasi teknologi</p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/antardata/layanan/codefusion.jpeg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        CodeFusion (Development Ecosystem Application)
+                      </h4>
+                      <p>
+                        Layanan pengembangan ekosistem software bisnis
+                        terintegrasi.
+                        <b
+                          >Memberikan dukungan terhadap mitra untuk pengembangan
+                          sistem berbasis digital yang terintegrasi, aman, dan
+                          adaptif.</b
+                        >
+                        Layanan pengembangan meliputi: Aplikasi web & mobile
+                        canggih (Android & iOS), Desain UI/UX adaptif,
+                        Arsitektur microservices, Pengembangan cross-platform,
+                        Manajemen project AI, Keamanan & performance testing,
+                        Deployment otomatis, Konsultasi teknologi
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
+            <!-- End Card Item -->
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card-item">
-              <div class="row">
-                <div class="col-xl-5">
-                  <div class="card-bg"><img src="assets/img/cards-1.jpg" alt=""></div>
-                </div>
-                <div class="col-xl-7 d-flex align-items-center">
-                  <div class="card-body">
-                    <h4 class="card-title">NetGuard (Comprehensive Network Solutions)</h4>
-                    <p>Layanan infrastruktur jaringan komputer dan kolaborasi sistem terintegrasi. Memberikan solusi untuk keamanan data dan performa yang tinggi</p>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="card-item">
+                <div class="row">
+                  <div class="col-xl-5">
+                    <div class="card-bg">
+                      <img
+                        src="assets/img/antardata/layanan/netguard.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                  <div class="col-xl-7 d-flex align-items-center">
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        NetGuard (Comprehensive Network Solutions)
+                      </h4>
+                      <p>
+                        <b
+                          >Layanan infrastruktur jaringan komputer dan
+                          kolaborasi sistem terintegrasi. Memberikan solusi
+                          untuk keamanan data dan performa yang tinggi</b
+                        >
+                      </p>
 
-                    <p>Infrasucture Services seperti : Desain arsitektur jaringan enterprise, Implementasi jaringan berbasis SDN (Software-Defined Networking), Keamanan jaringan tingkat lanjut, Monitoring real-time performansi jaringan, Optimasi bandwidth, Manajemen cisco dan mikrotik, Solusi jaringan berbasis cloud, Disaster recovery dan backup sistem, Konsultasi keamanan siber Integrasi IoT dan edge computing.</p>
+                      <p>
+                        <i>Infrasucture Services</i> seperti : Desain arsitektur
+                        jaringan enterprise, Implementasi jaringan berbasis SDN
+                        (Software-Defined Networking), Keamanan jaringan tingkat
+                        lanjut, Monitoring real-time performansi jaringan,
+                        Optimasi bandwidth, Manajemen cisco dan mikrotik, Solusi
+                        jaringan berbasis cloud, Disaster recovery dan backup
+                        sistem, Konsultasi keamanan siber Integrasi IoT dan edge
+                        computing.
+                      </p>
 
-                    <br>
+                      <br />
 
-                    <p>Cloud Services seperti : Komputasi cloud hibrid, Manajemen multi-cloud, Migrasi sistem legacy, Skalabilitas otomatis, Kontainerisasi dan kubernetes, Serverless computing, Database cloud terdistribusi, Manajemen sumber daya cloud, Optimasi biaya cloud.</p>
+                      <p>
+                        <i>Cloud Services</i> seperti : Komputasi cloud hibrid,
+                        Manajemen multi-cloud, Migrasi sistem legacy,
+                        Skalabilitas otomatis, Kontainerisasi dan kubernetes,
+                        Serverless computing, Database cloud terdistribusi,
+                        Manajemen sumber daya cloud, Optimasi biaya cloud.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div><!-- End Card Item -->
-
+            <!-- End Card Item -->
+          </div>
         </div>
+      </section>
+      <!-- /Service Cards Section -->
 
-      </div>
+      <!-- Testimonials Section -->
+      <section id="testimonials" class="testimonials section">
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Testimoni</h2>
+        </div>
+        <!-- End Section Title -->
 
-    </section><!-- /Service Cards Section -->
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimoni</h2>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="swiper init-swiper">
-          <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 600,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": "auto",
-              "pagination": {
-                "el": ".swiper-pagination",
-                "type": "bullets",
-                "clickable": true
-              },
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 40
+        <div class="container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
                 },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                },
+                "breakpoints": {
+                  "320": {
+                    "slidesPerView": 1,
+                    "spaceBetween": 40
+                  },
+                  "1200": {
+                    "slidesPerView": 3,
+                    "spaceBetween": 1
+                  }
                 }
               }
-            }
-          </script>
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                  <h3>Sara Wilsson</h3>
-                  <h4>Designer</h4>
+            </script>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    saya melakukan treatment bleaching gigi, sangat memuaskan,
+                    dokternya sangat komunikatif, pelayan di klinik sangat
+                    membantu dan ramah, bagian administrasinya juga sangat
+                    membantu sekali.
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/antardata/layanan/testimoni/1.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Jane Sabathani</h3>
+                    <h4>Pengunjung Antarmedika</h4>
+                  </div>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+              <!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                  <h3>Jena Karlis</h3>
-                  <h4>Store Owner</h4>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Overall Good 👍🏻👍🏻 Staff dan dokternya helpfull dan ramah²
+                    Kunjungan ke dokter gigi yang menyenangkan 😀
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/antardata/layanan/testimoni/2.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Marizka Hendrata</h3>
+                    <h4>Pengunjung Antarmedika</h4>
+                  </div>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+              <!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    best bangetttt😭😭😭😭 yuhuuu yang ramah cuyy dokternya jadi
+                    ga se seram itu sama peralatan gigi intinya ga trauma denger
+                    bornya beda dari yang lain pokonya dokter disana nerapin
+                    childers jadi ga takut samsekkk …
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/antardata/layanan/testimoni/3.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Jijah Manes</h3>
+                    <h4>Pengunjung Antarmedika</h4>
+                  </div>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+              <!-- End testimonial item -->
 
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="stars">
-                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                </div>
-                <p>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-                </p>
-                <div class="profile mt-auto">
-                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Pelayanan sangat sangat memuaskan, dokter beserta team²nya
+                    sangat ramah sekali, dan selalu memberikan kenyamanan kepada
+                    pasien👍👍 untuk penanganan nya sangat teliti dan tidak
+                    menimbulkan rasa sakit 😁 …
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/antardata/layanan/testimoni/4.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Sinta Eka</h3>
+                    <h4>Pengunjung Antarmedika</h4>
+                  </div>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
+              <!-- End testimonial item -->
 
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="stars">
+                    <i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i
+                    ><i class="bi bi-star-fill"></i>
+                  </div>
+                  <p>
+                    Pindah kontrol dokter gigi kesini pelayanannya cepet banget
+                    gak pake lama langsung di tangani dengan front office dan
+                    langsung tindakan dokter yg super ramah☺😊 dan sabar, akunya
+                    sampek ketiduran karena disini kontrol giginya minim rasa
+                    sakit 🥰 wajib kontrol disini terusss …
+                  </p>
+                  <div class="profile mt-auto">
+                    <img
+                      src="assets/img/antardata/layanan/testimoni/5.png"
+                      class="testimonial-img"
+                      alt=""
+                    />
+                    <h3>Dini Irmaningtias</h3>
+                    <h4>Pengunjung Antarmedika</h4>
+                  </div>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
+      </section>
+      <!-- /Testimonials Section -->
+    </main>
 
-      </div>
+    <footer id="footer" class="footer light-background">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-5 col-md-12 footer-about">
+              <a href="index.html" class="logo d-flex align-items-center">
+                <span class="sitename">PT. Antardata Cakrawala Teknologi</span>
+              </a>
+              <p>
+                Didirikan pada 10 Januari 2022 sebagai respons terhadap
+                kebutuhan pasar yang semakin kompleks dibidang teknologi
+                informasi. Perusahaan ini lahir dari kolaborasi sejumlah
+                profesional berpengalaman dibidang teknologi informasi yang
+                memiliki visi untuk memberikan solusi teknologi komprehensif.
+              </p>
+              <div class="social-links d-flex mt-4">
+                <a href=""><i class="bi bi-twitter-x"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
 
-    </section><!-- /Testimonials Section -->
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Tautan Penting</h4>
+              <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Portofolio</a></li>
+                <li><a href="#">Tim</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Kontak</a></li>
+                <li><a href="#">Terms of service</a></li>
+                <li><a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
 
-  </main>
+            <div class="col-lg-2 col-6 footer-links">
+              <h4>Layanan Kami</h4>
+              <ul>
+                <li><a href="#">Antarmedika MCR</a></li>
+                <li><a href="#">APM</a></li>
+                <li><a href="#">ProMedika</a></li>
+                <li><a href="#">AntarMedika HBC</a></li>
+                <li><a href="#">Nusabook</a></li>
+                <li><a href="#">CodeFusion</a></li>
+                <li><a href="#">NetGuard</a></li>
+              </ul>
+            </div>
 
-  <footer id="footer" class="footer light-background">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-5 col-md-12 footer-about">
-            <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">PT. Antardata Cakrawala Teknologi</span>
-            </a>
-            <p>Didirikan pada 10 Januari 2022 sebagai respons terhadap kebutuhan pasar yang semakin kompleks dibidang teknologi informasi. Perusahaan ini lahir dari kolaborasi sejumlah profesional berpengalaman dibidang teknologi informasi yang memiliki visi untuk memberikan solusi teknologi komprehensif. </p>
-            <div class="social-links d-flex mt-4">
-              <a href=""><i class="bi bi-twitter-x"></i></a>
-              <a href=""><i class="bi bi-facebook"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
-              <a href=""><i class="bi bi-linkedin"></i></a>
+            <div
+              class="col-lg-3 col-md-12 footer-contact text-center text-md-start"
+            >
+              <h4>Kontak Kami</h4>
+              <p>Jl. Bungur No.131 RT.001 RW.017</p>
+              <p>Gebang Patrang, Jember</p>
+              <p>Jawa Timur</p>
+              <p class="mt-4">
+                <strong>Telp:</strong> <span>082-333-5000-70</span>
+              </p>
+              <p><strong>Email:</strong> <span>antardata@example.com</span></p>
             </div>
           </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Tautan Penting</h4>
-            <ul>
-              <li><a href="#">Beranda</a></li>
-              <li><a href="#">Tentang Kami</a></li>
-              <li><a href="#">Layanan</a></li>
-              <li><a href="#">Portofolio</a></li>
-              <li><a href="#">Tim</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Kontak</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-6 footer-links">
-            <h4>Layanan Kami</h4>
-            <ul>
-              <li><a href="#">Antarmedika MCR</a></li>
-              <li><a href="#">APM</a></li>
-              <li><a href="#">ProMedika</a></li>
-              <li><a href="#">AntarMedika HBC</a></li>
-              <li><a href="#">Nusabook</a></li>
-              <li><a href="#">CodeFusion</a></li>
-              <li><a href="#">NetGuard</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-            <h4>Kontak Kami</h4>
-            <p>Jl. Bungur No.131 RT.001 RW.017</p>
-            <p>Gebang Patrang, Jember</p>
-            <p>Jawa Timur</p>
-            <p class="mt-4"><strong>Phone:</strong> <span>+62 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>antardata@example.com</span></p>
-          </div>
-
         </div>
       </div>
-    </div>
 
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Antardata Cakrawala Teknologi</strong> <span>All Rights Reserved</span></p>
-    </div>
+      <div class="container copyright text-center">
+        <p>
+          © <span>Copyright</span>
+          <strong class="px-1 sitename">Antardata Cakrawala Teknologi</strong>
+          <span>All Rights Reserved</span>
+        </p>
+      </div>
+    </footer>
 
-  </footer>
+    <!-- Scroll Top -->
+    <a
+      href="#"
+      id="scroll-top"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Preloader -->
+    <div id="preloader"></div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
