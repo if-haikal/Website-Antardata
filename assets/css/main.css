@@ -1134,6 +1134,12 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
+.features span {
+  font-size: 15px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  margin-bottom: 10px;
+}
+
 .features .phone-wrap {
   position: absolute;
   right: 0;
